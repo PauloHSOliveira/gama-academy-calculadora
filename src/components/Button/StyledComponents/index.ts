@@ -1,8 +1,8 @@
 import styled from 'styled-components';
 
 interface ButtonContainerProps {
-    background: string,
-    color: string,
+  background: string,
+  color: string,
 }
 
 export const ButtonContainer = styled.button<ButtonContainerProps>`
@@ -14,4 +14,10 @@ export const ButtonContainer = styled.button<ButtonContainerProps>`
   outline: 0;
   border-radius: 0.8rem;
   font-size: 2.5rem;
+  cursor:pointer;
+  transition: opacity 0.2s;
+
+  &:hover {
+    opacity: 0.5;
+  }
 `;
